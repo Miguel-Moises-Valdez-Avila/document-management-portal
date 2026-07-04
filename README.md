@@ -1,25 +1,18 @@
-# 🎾 Tennis Store — Frontend UI (Blade & CSS)
+# 🌐 MoyWeb — Document Management Web Portal
 
-A clean and responsive **frontend interface** for a tennis e-commerce store, built with Laravel Blade templates and custom CSS. This project focuses on the UI/UX design and visual structure of the store.
-
----
-
-## 🔗 Related Repositories
-
-> **Backend API:** [tennis-store-api](https://github.com/Miguel-Moises-Valdez-Avila/tennis-store-api)
-> **Full Stack Version:** [tennis-store-laravel](https://github.com/Miguel-Moises-Valdez-Avila/tennis-store-laravel)
+A static **web portal** built with HTML5 and CSS3, designed to manage documents, appointments, and advisor interactions through a clean and organized interface.
 
 ---
 
 ## 🧩 Features
 
-- ✅ **Product catalog page** — clean grid layout showcasing tennis equipment
-- ✅ **Homepage** — hero section, featured products, and promotions
-- ✅ **Product detail page** — images, description, and price display
-- ✅ **Shopping cart view** — order summary and item list UI
-- ✅ **Checkout page** — clean form layout for purchase flow
-- ✅ **Fully responsive** — mobile-first design for all screen sizes
-- ✅ **Custom CSS styling** — handcrafted styles without heavy dependencies
+- ✅ **Login page** — user authentication interface
+- ✅ **Home dashboard** — main navigation and overview
+- ✅ **Agenda module** — appointment and schedule management
+- ✅ **Documents section** — organized document listing and access
+- ✅ **PDF viewer** — integrated PDF document handling
+- ✅ **Advisor panel** — dedicated section for advisor interactions
+- ✅ **Responsive layout** — accessible across devices
 
 ---
 
@@ -27,38 +20,30 @@ A clean and responsive **frontend interface** for a tennis e-commerce store, bui
 
 | Layer | Technology |
 |---|---|
-| Templating | Laravel Blade |
-| Styling | CSS3 (custom) |
-| Scripting | JavaScript (ES6+) |
-| Framework | Laravel (view layer only) |
+| Structure | HTML5 |
+| Styling | CSS3 |
 | Version Control | Git + GitHub |
 
 ---
 
 ## 📸 Screenshots
 
-> Add screenshots of your homepage, catalog, product detail, and cart pages here
+> Add screenshots of your login page, dashboard, and document sections here
 
 ---
 
 ## ⚙️ Installation & Setup
 
+No installation required — open directly in browser:
+
 ```bash
 # Clone the repository
-git clone https://github.com/Miguel-Moises-Valdez-Avila/tennis-store-frontend.git
-cd tennis-store-frontend
+git clone https://github.com/Miguel-Moises-Valdez-Avila/MoyWeb.git
+cd MoyWeb
 
-# Install dependencies
-composer install
-npm install
-
-# Environment setup
-cp .env.example .env
-php artisan key:generate
-
-# Start the development server
-php artisan serve
-npm run dev
+# Open in browser
+open index.html
+# or just drag index.html into your browser
 ```
 
 ---
@@ -66,38 +51,23 @@ npm run dev
 ## 🗂️ Project Structure
 
 ```
-resources/
-├── views/
-│   ├── layouts/
-│   │   └── app.blade.php
-│   ├── home.blade.php
-│   ├── catalog.blade.php
-│   ├── product-detail.blade.php
-│   ├── cart.blade.php
-│   └── checkout.blade.php
-├── css/
-│   └── app.css
-└── js/
-    └── app.js
+MoyWeb/
+├── home/
+├── inicio de sesion/
+├── agenda/
+├── asesor/
+├── documentos/
+└── pdfs/
 ```
-
----
-
-## 🎨 Design Highlights
-
-- Clean and minimal layout focused on product visibility
-- Consistent color palette and typography throughout
-- Smooth hover effects and transitions on interactive elements
-- Mobile-first approach ensuring usability on all devices
 
 ---
 
 ## 🗺️ Roadmap
 
-- [ ] Migrate styles to Tailwind CSS
-- [ ] Connect to tennis-store-api backend
-- [ ] Add product search and filter UI
-- [ ] Implement dark mode
+- [ ] Migrate to Laravel + Blade for dynamic functionality
+- [ ] Add real authentication with backend
+- [ ] Connect documents module to database
+- [ ] Deploy to AWS S3 as static site
 
 ---
 
